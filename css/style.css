@@ -1,5 +1,5 @@
 body {
-  background-color: #606060; }
+  background-color: white; }
 
 header #sub-navbar {
   height: 30px;
@@ -18,6 +18,22 @@ header #logo {
   font-weight: 300;
   width: 200px;
   background-color: #666666; }
+header #catalog {
+  height: 50px;
+  background-color: #696362; }
+  header #catalog ul {
+    width: 100%;
+    margin: 10 0;
+    padding: 0;
+    float: right;
+    list-style: none; }
+    header #catalog ul li {
+      float: right;
+      background-color: #525252;
+      display: inline-block;
+      height: 30px;
+      width: 15%;
+      margin-right: 10; }
 
 .container {
   width: 80%;
@@ -66,5 +82,9 @@ header #logo {
 
 .search:focus {
   outline: none; }
+
+.temp {
+  height: 240px;
+  border: 1px solid black; }
 
 /*# sourceMappingURL=style.css.map */

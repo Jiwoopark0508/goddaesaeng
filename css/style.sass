@@ -4,14 +4,14 @@ $color3 : #525252
 $color4 : #606060
 $color5 : #20A0C1
 $color6 : #ff7e60
-
+$color7 : #696362
 =box-sizing($box)
 	-webkit-box-sizing : $box
 	-moz-box-sizing : $box
 	-ms-box-sizing : $box
 	box-sizing : $box
 body
-	background-color : $color4
+	background-color : white
 
 //header
 
@@ -33,6 +33,25 @@ header
 		font-weight : 300
 		width : 200px
 		background-color : $color1
+	
+	#catalog
+		height : 50px
+		background-color : $color7
+		ul
+			width : 100%
+			margin : 10 0
+			padding : 0
+			float : right
+			list-style: none
+			li 
+				float : right
+				background-color : $color3
+				display : inline-block
+				height : 30px
+				width : 15%
+				margin-right : 10
+
+
 .container
 	width : 80%
 	margin : 0 auto
@@ -82,3 +101,7 @@ header
 	font-size : 200%
 .search:focus
 	outline: none
+
+.temp
+	height : 240px
+	border : 1px solid black

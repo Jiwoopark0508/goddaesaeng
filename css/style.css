@@ -1,0 +1,38 @@
+body {
+  background-color: #606060; }
+
+header #sub-navbar {
+  height: 30px;
+  background-color: #666666; }
+header #navbar {
+  overflow: hidden;
+  height: 80px;
+  background-color: #BFBFBF; }
+  header #navbar .logo-container {
+    height: 100%;
+    padding: 10;
+    float: left; }
+header #logo {
+  box-sizing: border-box;
+  height: 100%;
+  font-weight: 300;
+  width: 200px;
+  background-color: #666666; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+#myCarousel {
+  height: 388px; }
+
+.item {
+  background-color: black; }
+
+.carousel-inner > .item {
+  height: 100%;
+  background-color: white; }
+  .carousel-inner > .item .info {
+    position: absolute; }
+
+/*# sourceMappingURL=style.css.map */

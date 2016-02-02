@@ -2,9 +2,19 @@ $color1 : #666666
 $color2 : #BFBFBF
 $color3 : #525252
 $color4 : #606060
+$color5 : #20A0C1
+$color6 : #ff7e60
 
+=box-sizing($box)
+	-webkit-box-sizing : $box
+	-moz-box-sizing : $box
+	-ms-box-sizing : $box
+	box-sizing : $box
 body
 	background-color : $color4
+
+//header
+
 header
 	#sub-navbar
 		height : 30px
@@ -30,12 +40,45 @@ header
 
 #myCarousel
 	height : 388px
-
-.item
-	background-color : black
+.carousel-inner
+	.carou_1
+		background-color : $color5
 
 .carousel-inner > .item
 	height : 100%
-	background-color : white
+
 	.info
 		position : absolute
+		background-color : $color6
+		width : 30%
+		height : 69px
+		top : 265px
+		left : 20%
+		text-align : center
+		padding-top : 25px
+		a
+			margin : 0 auto
+			text-decoration: none
+			color : white
+			font-weight : 200
+
+
+
+	
+//main
+
+.input-section
+	height : 150px
+	background-color : white
+	text-align : center
+	padding-top : 22px
+
+.input
+	width : 100%
+	+box-sizing(border-box)
+.search
+	width : 100%
+	border : 18px solid black
+	font-size : 200%
+.search:focus
+	outline: none

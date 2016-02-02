@@ -26,13 +26,45 @@ header #logo {
 #myCarousel {
   height: 388px; }
 
-.item {
-  background-color: black; }
+.carousel-inner .carou_1 {
+  background-color: #20A0C1; }
 
 .carousel-inner > .item {
-  height: 100%;
-  background-color: white; }
+  height: 100%; }
   .carousel-inner > .item .info {
-    position: absolute; }
+    position: absolute;
+    background-color: #ff7e60;
+    width: 30%;
+    height: 69px;
+    top: 265px;
+    left: 20%;
+    text-align: center;
+    padding-top: 25px; }
+    .carousel-inner > .item .info a {
+      margin: 0 auto;
+      text-decoration: none;
+      color: white;
+      font-weight: 200; }
+
+.input-section {
+  height: 150px;
+  background-color: white;
+  text-align: center;
+  padding-top: 22px; }
+
+.input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.search {
+  width: 100%;
+  border: 18px solid black;
+  font-size: 200%; }
+
+.search:focus {
+  outline: none; }
 
 /*# sourceMappingURL=style.css.map */

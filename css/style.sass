@@ -85,7 +85,7 @@ header
 
 	
 //main
-
+//// input-section
 .input-section
 	height : 150px
 	background-color : white
@@ -102,25 +102,39 @@ header
 .search:focus
 	outline: none
 
+//// main-section
+.main-section
+	position : relative
 .temp
 	height : 300px
 	border : 1px solid black
-
-.orderbox-temp
+////// orderbox
+.orderbox
+	box-sizing : border-box
 	position : absolute
-	top : 650
-	right : 0
-	border : 1px solid black
+	width : 0
+	height : 0
+	top : 0
+	right : 50
+	transition : 0.3s ease
+.temp1
 	width : 135px
 	height : 145px
-
+	background-color : $color2
+	transition : 0.3s ease
+.temp2
+	width : 355px
+	height : 590px	
+	background-color : $color3
+	transition : 0.3s ease
 .fixed-top
 	position : fixed
-	top : 0
-	right : 0
-
-
-
+.change 
+	background-color : red
+	position : absolute
+	bottom : 0
+	height : 30%
+	width : 100%
 
 
 

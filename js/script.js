@@ -4,10 +4,11 @@
 		
 		var main = {
 				init : function(){
-							var orderbox = $(".orderbox-temp");
-							$(window).scroll(function(){
+							var orderbox = $(".orderbox");
+							var threshold = 700
+							$(window).scroll(function( event ){
 									var scrollTop = $(window).scrollTop();
-										if(scrollTop > 650 ){
+										if(scrollTop > threshold ){
 											orderbox.addClass("fixed-top");
 										}
 										else{
@@ -15,6 +16,22 @@
 										}
 
 									});
+
+							$('.change').click(function(){
+								var orderbox = $("#orderbox");
+								var _temp1 = orderbox.hasClass('temp1');
+								if( _temp1 ){
+									orderbox.removeClass('temp1');
+									setTimeout(function(){
+										orderbox.addClass('temp2');
+									}, 500);
+									
+
+								}else{
+									orderbox.removeClass('temp2');
+									orderbox.addClass('temp1');
+								}
+							});
 						}
 
 
